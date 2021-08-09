@@ -1,0 +1,3 @@
+[submodule "mediasoup-client/deps/libmediasoupclient"]
+	path = mediasoup-client/deps/libmediasoupclient
+	url = https://github.com/versatica/libmediasoupclient.git

@@ -29,17 +29,14 @@ public class RTCUtils {
   }
 
   public static RtpParameters.Encoding genRtpEncodingParameters(
-      String rid,
-      boolean active,
-      Integer maxBitrateBps,
-      Integer minBitrateBps,
-      Integer maxFramerate,
-      Integer numTemporalLayers,
-      Double scaleResolutionDownBy,
-      Long ssrc) {
+      String rid, boolean active, double bitratePriority, @Priority int networkPriority,
+        Integer maxBitrateBps, Integer minBitrateBps, Integer maxFramerate,
+        Integer numTemporalLayers, Double scaleResolutionDownBy, Long ssrc) {
     return new RtpParameters.Encoding(
         rid,
         active,
+        bitratePriority,
+        networkPriority,
         maxBitrateBps,
         minBitrateBps,
         maxFramerate,

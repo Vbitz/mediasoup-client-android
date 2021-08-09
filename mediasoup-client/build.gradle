@@ -2,9 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 // Source of webrtc.
-def WEBRTC_INC_PATH = "${projectDir}/deps/webrtc/src"
+def WEBRTC_INC_PATH = "/home/joshua/dev/org/webrtc/src/"
 // Precompiled static libs and jar for webrtc android.
-def WEBRTC_LIB_PATH = "${projectDir}/deps/webrtc/lib"
+def WEBRTC_LIB_PATH = "/home/joshua/dev/org/webrtc/build/"
 
 android {
     compileSdkVersion 28
